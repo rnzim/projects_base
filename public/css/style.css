@@ -1,0 +1,81 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Caveat:wght@500&family=Lato:ital@1&family=Lora:ital@0;1&family=Montserrat&family=Noto+Serif&family=Oswald&family=Roboto&family=Roboto+Condensed&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header{
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+body{
+    background-color: rgb(220, 215, 215);
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.container{
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px blue solid;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+}
+button{
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    background-color: blue;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+}
+.container-dashboard{
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    background-color: white;
+
+}
+.math{
+    background-image: url('https://img.freepik.com/fotos-premium/3d-render-wallpaper-simbolo-matematico-escuro-com-foco-no-pi-vermelho_361738-11.jpg?w=1060');
+    width: 230px;
+    padding: 10px;
+    height: 70px;
+    background-size: cover;
+    transition: 200ms;
+    border-radius: 5px;
+}
+.math:hover{
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-matematica_23-2148146269.jpg');
+    width: 180px;
+    padding: 10px;
+    height: 50px;
+    transition: 200ms;
+}
+.h2-bg{
+    background-color: rgba(128, 128, 128, 0.47);
+    padding: 10px;
+    color: white;
+}
+.ex{
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 5px;
+}

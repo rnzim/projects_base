@@ -1,0 +1,16 @@
+.math{
+    background-image: url('https://img.freepik.com/fotos-premium/3d-render-wallpaper-simbolo-matematico-escuro-com-foco-no-pi-vermelho_361738-11.jpg?w=1060');
+    width: 93%;
+    padding: 10px;
+    height: 70px;
+    background-size: cover;
+    transition: 200ms;
+    border-radius: 5px;
+}
+.math:hover{
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-matematica_23-2148146269.jpg');
+    width: 93%;
+    padding: 10px;
+    height: 50px;
+    transition: 200ms;
+}
