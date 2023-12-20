@@ -7,7 +7,6 @@ class UserController{
   
     async registerUser(req,res){
         var {
-            fullname,
             username,
             email,
             pass,   
@@ -21,13 +20,10 @@ class UserController{
             let dataFormatada = dataAtual.toISOString().slice(0, 19).replace("T", " ");
 
           await User.createUser({
-            fullname,
             username,
             email,
             pass:hash,
-            sald,
-            seller,
-            registration_date:dataFormatada,
+            registration:dataFormatada,
           })
           res.redirect("/login")
          }catch(erro){
@@ -39,7 +35,7 @@ class UserController{
         res.render('user/login.ejs')
     }
     async dash(req,res){
-        res.render('dashboard/main.ejs')
+        res.render('dashboard/main.ejs',{name:req.session.user.username})
     }
     async register(req,res){
         res.render('user/register.ejs')
@@ -47,16 +43,16 @@ class UserController{
     async loginUserSession(req,res){
         var {email,pass} = req.body
         var user = await User.findByEmail(email)
+        console.log(user)
         if(user.length > 0){
             var comparePass = await bcrypt.compare(pass,user[0].pass)
             if(comparePass){
                 req.session.user = ({
                     id:user[0].id,
-                    fullname:user[0].fullname,
                     username:user[0].username,
-                    email:user[0].email,
-                    seller:user[0].seller})
-                    res.redirect('/')
+                    email:user[0].email
+                })
+                    res.redirect('/dash')
                    
             }else{
                 res.send('senha errada')

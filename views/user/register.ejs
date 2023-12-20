@@ -1,9 +1,12 @@
 <%- include('../partials/header.ejs') %>
 <main>
-    
     <div class="container">
-        <h1>Login</h1>
-        <form action="" method="post">
+        <h1>Cadastro</h1>
+        <form action="/register" method="post">
+            <div class="input">
+                <input type="text" name="username" placeholder="Nome De usuario ex: jon_093">
+            </div>
+            <br>
             <div class="input">
                 <input type="text" name="email" placeholder="E-mail">
             </div>
@@ -13,8 +16,7 @@
             </div>
            
             <br>
-            <button type="submit">logar</button>
-            <a href="/register">Cadastre-Se</a>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
 </main>
