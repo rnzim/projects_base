@@ -11,8 +11,9 @@ header{
     justify-content: space-between;
     padding: 10px;
     background-color: white;
-    margin-bottom: 30px;
+  
 }
+
 body{
     background-color: rgb(220, 215, 215);
 }
@@ -61,6 +62,7 @@ button{
     padding: 10px;
     width: 80%;
     background-color: white;
+    margin-top: 30px;
 
 }
 .math{
@@ -90,8 +92,10 @@ button{
     border-radius: 5px;
 }
 .card-product{
+ margin-top: 10px;
  border-radius: 10px 10px 0px 0px;
-  border: 2px solid rgba(213, 208, 208, 0.589);
+ border: 2px solid rgba(213, 208, 208, 0.589);
+  
 }
 .bg-product{
   height: 150px;
@@ -111,4 +115,20 @@ button{
 }
 .info{
     padding: 10px;
+}
+.menu{
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    display: none;
+}
+.menu  > .mn-item >a {
+    color: white;
+  
+    text-decoration: none;
+
+}
+.mn-item{
+    padding: 10px;
+    display: block;
 }
